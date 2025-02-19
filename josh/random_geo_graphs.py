@@ -1,4 +1,5 @@
 #####
+# This code was written by Josh Edwards for CS 4080 Group Project
 # This code was generated using Claude 3.5 Sonnet 
 # The code has been modified to implement random geometric graphs, print the graph and save it in three different formats
 #   - Adjacency list
