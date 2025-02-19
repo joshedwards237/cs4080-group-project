@@ -302,7 +302,7 @@ def load_graph(filename: str) -> Tuple[nx.Graph, dict]:
 
 if __name__ == "__main__":
     # Create graphs of different sizes
-    sizes = [100, 1000, 2500]
+    sizes = [100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
     
     for size in sizes:
         print(f"\nGenerating graphs with {size} nodes...")
