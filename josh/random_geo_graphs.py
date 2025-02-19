@@ -1,3 +1,15 @@
+#####
+# This code was generated using Claude 3.5 Sonnet 
+# The code has been modified to implement random geometric graphs, print the graph and save it in three different formats
+#   - Adjacency list
+#   - JSON
+#   - Edge list
+#
+# The code has also been modified to save the graph in the specified format and save it in the current directory
+# The code has also been modified to generate graphs of various sizes, from 10 to 1000 nodes
+#
+#####  
+
 import networkx as nx
 import matplotlib.pyplot as plt
 import os
@@ -8,6 +20,7 @@ import pickle
 
 OutputFormat = Literal['adj', 'json', 'edge']
 
+# Create a random geometric graph with given number of nodes and radius.
 def create_random_geometric_graph(n_nodes: int, radius: float) -> Tuple[nx.Graph, dict]:
     """
     Create a random geometric graph with given number of nodes and radius.
@@ -32,6 +45,7 @@ def create_random_geometric_graph(n_nodes: int, radius: float) -> Tuple[nx.Graph
     
     return G, pos
 
+# Save the graph data in the specified format
 def save_graph_data(G: nx.Graph, pos: dict, base_filename: str, output_dir: str, format: OutputFormat = 'adj'):
     """
     Save the graph data in the specified format
@@ -93,6 +107,7 @@ def save_graph_data(G: nx.Graph, pos: dict, base_filename: str, output_dir: str,
         print(f"Error saving graph {base_filename}: {str(e)}")
         raise
 
+# Visualize and save the graph as an image
 def visualize_and_save_graph(G: nx.Graph, pos: dict, base_filename: str, output_dir: str):
     """
     Visualize and save the graph as an image
@@ -120,6 +135,7 @@ def visualize_and_save_graph(G: nx.Graph, pos: dict, base_filename: str, output_
                 bbox_inches='tight')
     plt.close()
 
+# Generate random geometric graphs of various sizes
 def generate_graphs(format: OutputFormat = 'adj'):
     """
     Generate random geometric graphs of various sizes
