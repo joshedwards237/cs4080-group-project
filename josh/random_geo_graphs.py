@@ -130,8 +130,8 @@ def generate_graphs(format: OutputFormat = 'adj'):
     # Define the sizes of graphs to generate
     sizes = [10] + list(range(100, 1100, 100))
     
-    # Create output directory
-    output_dir = f"random_geometric_graphs_{format}"
+    # Create output directory in current directory
+    output_dir = os.path.join(".", f"random_geometric_graphs_{format}")
     os.makedirs(output_dir, exist_ok=True)
     
     # Store graph information
