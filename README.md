@@ -123,3 +123,29 @@ The program also generates PNG images of each graph. These images are saved in t
 ## Graph Statistics
 
 The program also generates a summary text file with graph statistics. This file is saved in the `random_geometric_graphs_{format}` directory.
+
+
+# Random Small World Graph Generator
+
+The small world generator borrows the majority of the design patterns from the geometric generator in order to maintain consistency.  There are minor differences in the execution and the artifacts saved.  The differences are shown with (***)
+
+## Usage
+
+1. Instead of running it by itself, it can be imported into an existing python project and ran. 
+   ```python
+   import small_world_graph as sw
+
+   sw.generate_graphs()
+   ```
+
+2. The generate_graph function can take in two parameters for custom graph generation:
+   1. node_set: an array of the node sizes for which to generate graphs for.  Defaults to:  [10, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000]
+   2. output_format: an array of strings for all the formats wanted.  Defaults to: ['adj', 'json', 'edge', 'pickle']
+
+## NOTE: Calling the function without parameters will result in 11 graphs, each with all 4 file types and a diagram saved.
+
+   3. It is also possible to generate the graph objects by themselves without saving any of the files. by calling the generate_set_of_graphs function.  The only thing needed is a node_set, the rest of the variables can be left as is. 
+      ```python
+      generate_set_of_graphs(node_set, random_k=None, random_p=None, random_weights=False, seed=None)
+      ```
+   

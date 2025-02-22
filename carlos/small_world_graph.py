@@ -9,7 +9,7 @@ import os
 
 def generate_graphs(node_set=None, output_format=None):
     if output_format is None:
-        output_format = ['adj', 'json', 'edge', 'graph']
+        output_format = ['adj', 'json', 'edge', 'pickle']
 
     if node_set is None:
         node_set = [10, 100, 200, 300, 400, 500,
@@ -182,7 +182,7 @@ def save_graph_data(graph: nx.Graph, positions, filename, directory, formats):
             for u, v, data in graph.edges(data=True):
                 f.write(f"{u} {v} {data['weight']:.6f}\n")
 
-    if 'graph' in formats:
+    if 'pickle' in formats:
         # Save as edge list
         output_path = os.path.join(directory, f"{filename}.pickle")
         pickle.dump(graph, open(output_path, 'wb'))
