@@ -83,18 +83,7 @@ Average degree: 2.40
 
 ## Graph Sizes Generated
 
-The program generates graphs with the following numbers of nodes:
-- 10 nodes
-- 100 nodes
-- 200 nodes
-- 300 nodes
-- 400 nodes
-- 500 nodes
-- 600 nodes
-- 700 nodes
-- 800 nodes
-- 900 nodes
-- 1000 nodes
+The program generates graphs with the node count ranging between 50 to 1,000 in increments of 50.
 
 Each graph is saved with:
 1. The graph data in your chosen format
