@@ -7,12 +7,9 @@ import matplotlib.pyplot as plt
 def aux_path_search(G, source, target, removed):
     heap = [(0, source)]
     distances = {source: 0}
-    target_explored = False
     while heap:
         cost, node = heapq.heappop(heap)
         if node == target:
-            target_explored = True
-        if node == target and target_explored:
             return cost
         for neighbor in G.neighbors(node):
             if neighbor == removed:
