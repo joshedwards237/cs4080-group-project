@@ -21,11 +21,11 @@
 - os
 
 ## Deliverable to Directory Mapping
-Deliverable 1.a: Josh
-Deliverable 1.b: Emily
-Deliverable 2: Emily 
-Deliverable 3: Austin
-Deliverable 4: In written report
+- Deliverable 1.a: Josh
+- Deliverable 1.b: Emily
+- Deliverable 2: Emily 
+- Deliverable 3: Austin
+- Deliverable 4: In written report
 
 # Random Geometric Graph Generator (Deliverable 1.a)
 
