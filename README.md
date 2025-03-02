@@ -1,10 +1,6 @@
 # cs4080-group-project
 
-### Josh Edwards, Austin Weingart, Carlos Guerra, Emily Ng
-
-# Random Geometric Graph Generator
-
-This program generates random geometric graphs of various sizes and saves them in different formats along with visualizations.
+### Josh Edwards, Austin Weingart, Emily Ng
 
 ## Requirements
 
@@ -12,6 +8,29 @@ This program generates random geometric graphs of various sizes and saves them i
 - NetworkX
 - Matplotlib
 - NumPy
+- math
+- heapq
+- itertools 
+- matplotlib
+- random
+- unittest
+- collections
+- scipy
+- time
+- psutil
+- os
+
+## Deliverable to Directory Mapping
+Deliverable 1.a: Josh
+Deliverable 1.b: Emily
+Deliverable 2: Emily 
+Deliverable 3: Austin
+Deliverable 4: In written report
+
+# Random Geometric Graph Generator (Deliverable 1.a)
+
+This program generates random geometric graphs of various sizes and saves them in different formats along with visualizations.
+
 
 ## Installation
 
@@ -114,7 +133,7 @@ The program also generates PNG images of each graph. These images are saved in t
 The program also generates a summary text file with graph statistics. This file is saved in the `random_geometric_graphs_{format}` directory.
 
 
-# Random Small World Graph Generator
+# Random Small World Graph Generator (Deliverable 1.b)
 
 The small world generator borrows the majority of the design patterns from the geometric generator in order to maintain consistency.  There are minor differences in the execution and the artifacts saved.  The differences are shown with (***)
 
@@ -137,4 +156,13 @@ The small world generator borrows the majority of the design patterns from the g
       ```python
       generate_set_of_graphs(node_set, random_k=None, random_p=None, random_weights=False, seed=None)
       ```
+
+## To run deliverable 2:
+
+   
+
+
+## To run deliverable 3:
+
+   A jupyter notebook title preprocessing.ipynb is in the Austin directory, if all above packages are installed the jupyter notebook will run sequentially.
    
