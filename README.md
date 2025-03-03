@@ -159,10 +159,10 @@ The small world generator borrows the majority of the design patterns from the g
 
 ## To run deliverable 2:
 
-   
+   A jupyter notebook titled final_bidibfanddijkstras.ipynb is in the Austin directory, if all above packages are installed the jupyter notebook will run sequentially.
 
 
 ## To run deliverable 3:
 
-   A jupyter notebook title preprocessing.ipynb is in the Austin directory, if all above packages are installed the jupyter notebook will run sequentially.
+   A jupyter notebook titled preprocessing.ipynb is in the Austin directory, if all above packages are installed the jupyter notebook will run sequentially.
    
